@@ -32,7 +32,9 @@
 					for (i = 0; i < recipes.results.length; i++) {
 						num = parseInt(i) + 1;
 						string += "<strong>" + "Recipe " + num + "</strong>" + "<br />";
-						string += recipes.results[i].title + "<br /> <br />";
+						string += recipes.results[i].title + "<br />";
+						string += "Ready in: " + recipes.results[i].readyInMinutes + " minutes" + "<br />";
+						string += "Servings: " + recipes.results[i].servings + " people" + "<br /> <br />";
 					}
 					document.getElementById("data").innerHTML = string;
 				}
